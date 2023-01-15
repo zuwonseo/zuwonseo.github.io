@@ -18,6 +18,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
         }
 
         h1 {
@@ -152,14 +153,13 @@
 
         #contact {
             background-color: #2e5a29;
-            height: 1000px;
             color: #dde8c8;
             text-align: center;
+            padding: 72px 0px;
         }
 
         #contact h1 {
             text-align-last: center;
-            padding-top: 72px;
         }
 
         #contact hr {
@@ -220,14 +220,13 @@
         }
 
         #about {
-            height: 650px;
             background-color: #f0ffdc;
             color: #446930;
+            padding: 72px 0px;
         }
 
         #about h1 {
             text-align: center;
-            padding-top: 72px;
         }
 
         #about hr {
@@ -248,7 +247,7 @@
         }
 
         #about button {
-            width: 14%;
+            width: 15%;
             height: 70px;
             margin: 35px 0px;
             border-radius: 10px;
@@ -262,7 +261,7 @@
 
         #about button:hover {
             border: solid;
-            width: 15%;
+            width: 16%;
             height: 80px;
             color: #f0ffdc;
             background-color: #446930;
@@ -271,6 +270,73 @@
         #center {
             text-align: center;
         }
+
+        footer {
+            text-align: center;
+            font-family: 'nunito';
+            padding: 10px;
+            background-color: #305d30;
+            color: beige;
+        }
+
+        #side {
+            border: solid;
+            background-color: black;
+            position: fixed;
+        }
+
+        #mail {
+            height: 400px;
+            text-align: center;
+            padding: 72px 0px;
+            background-color: #51723b;
+            color: #e3efa7;
+        }
+
+        #mail hr {
+            background-color: #e3efa7;
+        }
+
+        #mail i {
+            color: #e3efa7;
+            font-size: 30px;
+        }
+
+        #mail .seperator {
+            margin: 17px 0px;
+        }
+
+        #mail i:not(.seperator i) {
+            font-size: 50px;
+            border: solid;
+            color: rgba(245, 245, 220, 0.58);
+            transition: 0.2s;
+            /*            margin: auto 35px;*/
+            padding: 12px;
+            width: 95px;
+            height: 95px;
+            padding: 15px;
+            border-radius: 19px;
+        }
+
+        #mail li {
+            display: inline-block;
+            /*            border: solid;*/
+            margin: 0px 16px;
+        }
+
+        #mail i:not(.seperator i):hover {
+            color: beige;
+            font-size: 56px;
+            background-color: beige;
+            color: #51723b;
+        }
+
+        #mail i.fa-discord {
+            position: relative;
+            right:
+        }
+
     </style>
 </head>
 
@@ -284,6 +350,7 @@
             <li><a href="#about">About</a></li>
         </ul>
     </section>
+
     <section id="intro">
         <h1>hello my name is Juwon</h1>
         <img src="images/20210309_214028.jpg" alt="">
@@ -292,6 +359,7 @@
             <i class="fa-solid fa-seedling"></i>
             <hr>
         </div>
+
         <div>
             <p>Student - A Dog's Owner</p>
         </div>
@@ -325,6 +393,43 @@
             <a href="images/20210309_213922.jpg" alt="" download><button><i class="fa-regular fa-circle-down"></i> Click Here For Hodu!</button></a>
         </div>
     </section>
+    <section id="mail">
+        <ul>
+
+            <h1>mail me</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-seedling"></i>
+                <hr>
+            </div>
+            <li>
+                <a href="https://discordapp.com/users/1014943908058365952">
+                    <abbr title="This will take you to discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </abbr>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:zuwongseo@gmail.com"> <abbr title="May not always be available">
+                        <i class="fa-solid fa-envelope"></i>
+                    </abbr>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:greatgreatcandy@gmail.com">
+                    <abbr title="Second email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </abbr>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <footer>
+        Copyright &copy; Juwon 2023
+    </footer>
+
 </body>
 
 </html>
