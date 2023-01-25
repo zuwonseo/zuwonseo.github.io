@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>me</title>
+    <title>Juwon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css" integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -21,6 +21,14 @@
 
         }
 
+        button {
+            border: solid;
+            background-color: transparent;
+            border-radius: 10px;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
         h1 {
             font-family: 'barlow condensed';
             text-transform: uppercase;
@@ -29,7 +37,8 @@
 
         .seperator {
             text-align: center;
-            color: rgb(81, 111, 24)
+            color: rgb(81, 111, 24);
+            margin: 17px 0px;
         }
 
         .seperator hr {
@@ -202,17 +211,11 @@
         #contact button {
             width: 30%;
             height: 64px;
-            border: solid;
-            background-color: transparent;
-            border-radius: 8px;
             color: #dde8c8;
             font-family: 'nunito';
-            font-size: 24px;
-            transition: 0.3s;
         }
 
         #contact button:hover {
-            border: black;
             background-color: #dde8c8;
             color: #2e5a29;
             width: 32%;
@@ -247,24 +250,16 @@
         }
 
         #about button {
-            width: 15%;
-            height: 70px;
             margin: 35px 0px;
-            border-radius: 10px;
-            background-color: #f0ffdc;
-            border: solid;
-            font-size: 20px;
             font-family: 'nunito';
             color: #446930;
-            transition: 0.3s;
+            padding: 17px 27px;
         }
 
         #about button:hover {
-            border: solid;
-            width: 16%;
-            height: 80px;
             color: #f0ffdc;
             background-color: #446930;
+            padding: 20px 30px;
         }
 
         #center {
@@ -311,7 +306,7 @@
             border: solid;
             color: rgba(245, 245, 220, 0.58);
             transition: 0.2s;
-/*            margin: auto 35px;*/
+            /*            margin: auto 35px;*/
             padding: 12px;
             width: 95px;
             height: 95px;
@@ -321,7 +316,7 @@
 
         #mail li {
             display: inline-block;
-/*            border: solid;*/
+            /*            border: solid;*/
             margin: 0px 16px;
         }
 
@@ -331,10 +326,54 @@
             background-color: beige;
             color: #51723b;
         }
-        #mail i.fa-discord{
+
+        #mail i.fa-discord {
             position: relative;
-            right: 
+            right:
         }
+
+        #more {
+            background-color: #316f3a;
+            padding: 72px 0px;
+            color: #faffc2;
+            text-align: center;
+            padding: 140px;
+        }
+
+        #more i {
+            color: #faffc2;
+        }
+
+        #more hr {
+            background-color: #faffc2;
+        }
+
+        #more h1:not(h1:first-of-type) {
+            font-family: 'nunito';
+            font-weight: 500;
+            font-size: 34px;
+            margin-top: 80px;
+        }
+
+        #more h2 {
+            font-family: 'nunito';
+            font-size: 90px;
+            text-transform: capitalize;
+            font-weight: 900;
+        }
+
+        #more button {
+            font-family: 'roboto condensed';
+            color: #faffc2;
+            padding: 15px 50px;
+        }
+
+        #more button:hover {
+            padding: 20px 55px;
+            background-color: #faffc2;
+            color: #316f3a
+        }
+
     </style>
 </head>
 
@@ -391,6 +430,41 @@
             <a href="images/hodu%20star%20u.jpg" alt="" download><button><i class="fa-regular fa-circle-down"></i> Click Here For Hodu!</button></a>
         </div>
     </section>
+
+    <section id="more">
+        <h1>more about me</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-seedling"></i>
+            <hr>
+        </div>
+        <h1>my birthstone:
+        </h1>
+        <h2>emerald</h2>
+        <a href="https://images.sampletemplates.com/wp-content/uploads/2015/11/13053124/Birthstone-Chart-by-Month.jpg" alt="" download>
+            <button>What's Yours?</button>
+        </a>
+        <h1>my personality:</h1>
+        <h2>ISTJ</h2>
+        <a href="https://www.16personalities.com/free-personality-test" alt="" download>
+            <button>Test Yours!</button>
+        </a>
+        <h1>my constellation:</h1>
+        <h2>Taurus</h2>
+        <a href="https://cf.ltkcdn.net/horoscopes/images/std-xs/287813-340x454-astrological-sign-glyphs-symbols.png"><button>What's Yours?</button></a>
+    </section>
+
+    <section id="hobbies">
+        <h1>my hobbies</h1>
+    </section>
+
+
+
+
+
+
+
+
     <section id="mail">
         <ul>
 
@@ -428,4 +502,6 @@
         Copyright &copy; Juwon 2023
     </footer>
 
-</body></html>
+</body>
+
+</html>
