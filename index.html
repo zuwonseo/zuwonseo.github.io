@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Juwon Seo</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -19,7 +18,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
 
+        .icon-arrow-up {
+            font-size: 29px;
+            border: solid;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.48);
+            right: 0;
+            bottom: 0;
+            color: white;
+            position: fixed;
+            margin: 10px;
         }
 
         button {
@@ -34,6 +45,7 @@
             font-family: 'barlow condensed';
             text-transform: uppercase;
             font-size: 65px;
+            text-align: center;
         }
 
         .seperator {
@@ -59,81 +71,50 @@
             width: 100%;
             background-color: rgb(114, 150, 47);
             position: fixed;
-            padding: 0px 5%;
             color: white;
-            z-index: 100;
+            padding: 0px 25px;
+            z-index: 1;
         }
 
         #nav h1 {
-            font-family: 'barlow condensed';
-            text-transform: uppercase;
             line-height: 92px;
             margin: 10px 0px;
-        }
-
-        #nav ul,
-        #nav li,
-        #nav h1 {
-            display: inline-block;
-            vertical-align: middle;
-            /*                        border: solid blue;*/
+            text-align: left;
         }
 
         #nav li {
-            font-size: 40px;
+            font-size: 0px;
             font-family: 'barlow condensed';
-            margin: 0px 24px;
             text-transform: uppercase;
             font-weight: 500;
             transition: 0.3s;
-            text-decoration-line: none;
-        }
-
-        #nav a {
-            color: white;
-            text-decoration-line: none;
+            list-style: none;
         }
 
         #nav li:hover {
             font-size: 50px;
         }
 
-        #nav ul {
-            width: 70%;
-            text-align-last: right;
-        }
-
-        .icon-arrow-up {
-            font-size: 29px;
-            border: solid;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.48);
-            right: 0;
-            bottom: 0;
-            color: white;
-            position: fixed;
-            margin: 10px;
+        #nav a {
+            text-decoration-line: none;
+            color: transparent;
         }
 
         #intro {
             width: 100%;
-            height: 768px;
             background-color: #f5ffe4;
             padding: 200px 0px;
             text-align: center;
         }
 
         #intro img {
-            width: 19%;
+            width: 400px;
             border-radius: 30px;
             margin-top: 34px;
         }
 
         #intro h1 {
-            text-align: center;
             color: rgba(80, 106, 82, 0.78);
-            /*            border: solid;*/
             text-transform: capitalize;
         }
 
@@ -149,15 +130,9 @@
         #intro p {
             font-size: 28px;
             font-family: 'nunito';
-            width: 26%;
+            width: 80%;
             display: inline-block;
-            /*            border: solid red;*/
             color: rgba(30, 54, 32, 0.78);
-        }
-
-        #intro div:nth-of-type(2) {
-            /*            border: solid;*/
-            text-align: center;
         }
 
         #contact {
@@ -167,16 +142,11 @@
             padding: 72px 0px;
         }
 
-        #contact h1 {
-            text-align-last: center;
-        }
-
         #contact hr {
             background-color: #dde8c8;
         }
 
         #contact div:first-of-type {
-            margin: 17px 0px;
             color: #dde8c8;
         }
 
@@ -189,17 +159,15 @@
             border-bottom-color: #dde8c8;
             border-bottom-style: solid;
             color: #dde8c8;
+            width: 80%;
             padding: 18px 0px;
             display: block;
-            /*            border: solid;*/
-            width: 30%;
-            margin: 10px 0px;
             margin: 10px auto;
         }
 
         textarea {
-            max-width: 30%;
-            min-width: 30%;
+            max-width: 80%;
+            min-width: 80%;
             min-height: 150px;
             max-height: 355px;
         }
@@ -226,9 +194,6 @@
             background-color: #f0ffdc;
             color: #446930;
             padding: 72px 0px;
-        }
-
-        #about h1 {
             text-align: center;
         }
 
@@ -236,17 +201,11 @@
             background-color: #446930;
         }
 
-        #about div:first-of-type {
-            margin: 17px 0px;
-            color: #446930;
-        }
-
         #about p {
             font-family: 'nunito';
             font-size: 30px;
-            width: 50%;
-            margin: auto;
-            column-count: 2;
+            margin: 20px 30px;
+            text-align: left;
         }
 
         #about button {
@@ -262,81 +221,12 @@
             padding: 20px 30px;
         }
 
-        #center {
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            font-family: 'nunito';
-            padding: 10px;
-            background-color: #305d30;
-            color: beige;
-        }
-
-        #side {
-            border: solid;
-            background-color: black;
-            position: fixed;
-        }
-
-        #mail {
-            height: 400px;
-            text-align: center;
-            padding: 72px 0px;
-            background-color: #51723b;
-            color: #e3efa7;
-        }
-
-        #mail hr {
-            background-color: #e3efa7;
-        }
-
-
-
-        #mail .seperator {
-            margin: 17px 0px;
-        }
-
-        #mail i:not(.seperator i) {
-            font-size: 50px;
-            border: solid;
-            color: rgba(245, 245, 220, 0.58);
-            transition: 0.2s;
-            /*            margin: auto 35px;*/
-            padding: 12px;
-            width: 95px;
-            height: 95px;
-            padding: 15px;
-            border-radius: 19px;
-        }
-
-        #mail li {
-            display: inline-block;
-            /*            border: solid;*/
-            margin: 0px 16px;
-        }
-
-        #mail i:not(.seperator i):hover {
-            color: beige;
-            font-size: 56px;
-            background-color: beige;
-            color: #51723b;
-        }
-
-        #mail i.fa-discord {
-            position: relative;
-        }
-
         #more {
             background-color: #316f3a;
             padding: 72px 0px;
             color: #faffc2;
             text-align: center;
-            padding: 140px;
         }
-
-
 
         #more hr {
             background-color: #faffc2;
@@ -368,99 +258,174 @@
             color: #316f3a
         }
 
-
         #hobbies a {
             color: #83d086;
         }
-
 
         #hobbies hr {
             background-color: #0f5d24;
         }
 
-
-
         #hobbies {
             background-color: #ffffc7;
             color: #0f5d24;
-            padding: 72px;
-            text-align: right;
+            padding: 72px 27px;
         }
 
         #hobbies h1:not(h1:first-of-type) {
             font-family: 'nunito';
             font-weight: 900;
-            font-size: 80px;
+            font-size: 70px;
             margin-bottom: 32px;
+            margin-top: 22px
         }
 
-        #hobbies h1:first-of-type {
-            text-align: center;
+        #right {
+            text-align: right;
+        }
+
+        #left {
+            text-align: left;
         }
 
         #hobbies p {
             font-family: 'nunito';
             font-size: 25px;
-            width: 37%;
             display: inline-block;
-        }
-
-        #hobbies h1:nth-of-type(2),
-        #hobbies h1:nth-of-type(4) {
-            text-align: left;
-        }
-
-        #seperate {
-            text-align: left;
-            display: block;
-            /*            border:solid;*/
         }
 
         #gallery {
             background-color: #43674e;
             color: beige;
-            padding: 90px 0px;
+            padding: 90px 10px;
             text-align: center;
         }
 
+        #gallery a {
+            color: beige;
+        }
+
         #gallery img {
-            width: 473px;
             border: solid 10px;
             border-radius: 10px;
             transition: 0.3s;
+            width: 66%;
+            margin-top: 21px
         }
 
         #gallery img:hover {
             transform: scale(1.12)
         }
-        
-        #gallery .seperator{
-            margin-bottom: 60px;
-        }
-        
-        #gallery hr{
+
+        #gallery hr {
             background-color: beige;
         }
-        
-        #g7{
-            width: 48% !important;
+
+        #mail {
+            height: 400px;
+            text-align: center;
+            padding: 72px 0px;
+            background-color: #51723b;
+            color: #e3efa7;
         }
 
-        
+        #mail hr {
+            background-color: #e3efa7;
+        }
+
+        #mail .seperator {
+            margin: 17px 0px;
+        }
+
+        #mail i:not(.seperator i) {
+            font-size: 50px;
+            border: solid;
+            color: rgba(245, 245, 220, 0.58);
+            transition: 0.2s;
+            width: 95px;
+            height: 95px;
+            padding: 15px;
+            border-radius: 19px;
+        }
+
+        #mail li {
+            display: inline-block;
+            margin: 0px 16px;
+        }
+
+        #mail i:not(.seperator i):hover {
+            background-color: beige;
+            color: #51723b;
+            transform: scale(1.12)
+        }
+
+        #mail i.fa-discord {
+            text-align: center;
+            line-height:
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'nunito';
+            padding: 10px;
+            background-color: #305d30;
+            color: beige;
+        }
+
+        @media all and (min-width:745px) {
+            #gallery img {
+                display: inline-block;
+                width: 25%;
+            }
+
+            #g7 {
+                width: 76% !important;
+            }
+        }
+
+        @media all and (min-width:1200px) {
+            #nav a {
+                color: white;
+            }
+
+            #nav h1,
+            #nav ul,
+            #nav li {
+                display: inline-block;
+                line-height: 95px;
+                vertical-align: middle;
+            }
+
+            #nav li {
+                margin: 0px 1.6%;
+                font-size: 40px;
+            }
+
+            #nav ul {
+                width: 70%;
+                text-align: right;
+            }
+
+            #about p {
+                display: inline-block;
+                width: 30%;
+                vertical-align: top;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <a href="#intro"><i class="icon-arrow-up"></i></a>
     <section id="nav">
         <h1>Juwon seo</h1>
         <ul>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#mail">Mail</a></li>
+            <li><a href="#more">more</a></li>
+            <li><a href="#gallery">gallery</a></li>
         </ul>
     </section>
 
+    <a href="#intro"><i class="icon-arrow-up"></i></a>
     <section id="intro">
         <h1>hello my name is Juwon</h1>
         <img src="images/hodu%20laydown.jpg" alt="">
@@ -491,6 +456,7 @@
         </form>
     </section>
 
+
     <section id="about">
         <h1>about me</h1>
         <div class="seperator">
@@ -498,7 +464,9 @@
             <i class="fa-solid fa-seedling"></i>
             <hr>
         </div>
-        <p>Likes dogs, has a dog and loves that dog. The dog's name is Hodu. Has a sister named Juha. Has a mother named Su and has a father named Jae Sung. Likes tennis and volleyball. favourite food is everything except for foods with mustard or mayo. Loves coding and playing board/video games.</p>
+        <p>Likes dogs, has a dog and loves that dog. The dog's name is Hodu. Has a sister named Juha. Has a mother named Su and has a father named Jae Sung.
+        </p>
+        <p>Likes tennis and volleyball. favourite food is everything except for foods with mustard or mayo. Loves coding and playing board/video games.</p>
         <div id="center">
             <a href="images/hodu%20stare%20at%20u.jpg" alt="" download><button><i class="fa-regular fa-circle-down"></i> Click Here For Hodu!</button></a>
         </div>
@@ -514,17 +482,16 @@
         <h1>my birthstone:
         </h1>
         <h2>emerald</h2>
-        <a href="https://images.sampletemplates.com/wp-content/uploads/2015/11/13053124/Birthstone-Chart-by-Month.jpg" alt="" download>
+        <a href="https://images.sampletemplates.com/wp-content/uploads/2015/11/13053124/Birthstone-Chart-by-Month.jpg" alt="" download target="_blank">
             <button>What's Yours?</button>
         </a>
         <h1>my personality:</h1>
-        <h2>ISTJ</h2>
-        <a href="https://www.16personalities.com/free-personality-test" alt="" download>
+        <h2>ISTJ</h2><a href="https://www.16personalities.com/free-personality-test" alt="" download target="_blank">
             <button>Test Yours!</button>
         </a>
         <h1>my constellation:</h1>
         <h2>Taurus</h2>
-        <a href="https://cf.ltkcdn.net/horoscopes/images/std-xs/287813-340x454-astrological-sign-glyphs-symbols.png"><button>What's Yours?</button></a>
+        <a href="https://cf.ltkcdn.net/horoscopes/images/std-xs/287813-340x454-astrological-sign-glyphs-symbols.png" target="_blank"><button>What's Yours?</button></a>
     </section>
 
     <section id="hobbies">
@@ -534,20 +501,14 @@
             <i class="fa-solid fa-seedling"></i>
             <hr>
         </div>
-        <h1>drawing</h1>
-        <div id="seperate">
-            <p>I usually use my <a href="https://www.apple.com/ca/ipad-pro/?afid=p238%7Cs0xk854YD-dc_mtid_1870765e38482_pcrid_624872989600_pgrid_117378708841_pntwk_g_pchan__pexid__&cid=aos-ca-kwGO-ipad--slid---product-">Ipad</a> and <a href="https://www.apple.com/ca/shop/product/MU8F2AM/A/apple-pencil-2nd-generation">Apple Pencil</a> to draw. I usually draw cartoon characters or draw animations. The programs I use is <a href="https://procreate.com/">Procreate</a> for just drawing and <a href="https://flipaclip.com/">Flipaclip</a> for animating. Sometimes I like to use paper and pencil for making stop motions.</p>
-        </div>
+        <h1 id="left">drawing</h1>
+        <p>I usually use my <a href="https://www.apple.com/ca/ipad-pro/?afid=p238%7Cs0xk854YD-dc_mtid_1870765e38482_pcrid_624872989600_pgrid_117378708841_pntwk_g_pchan__pexid__&cid=aos-ca-kwGO-ipad--slid---product-">Ipad</a> and <a href="https://www.apple.com/ca/shop/product/MU8F2AM/A/apple-pencil-2nd-generation">Apple Pencil</a> to draw. I usually draw cartoon characters or draw animations. The programs I use is <a href="https://procreate.com/">Procreate</a> for just drawing and <a href="https://flipaclip.com/">Flipaclip</a> for animating. Sometimes I like to use paper and pencil for making stop motions.</p>
 
-        <h1>editing videos</h1>
-        <div id="allign-right">
-            <p>Although it is a weird hobby, I like to take videos and edit them. I usually make a documentaries of my family members, mostly my dog, or a movie trailer. When I edit, I use the program <a href="https://inshot.com">InShot</a> but I hope to switch it soon because its tools are limited. If you know a good editing program, please contact me!</p>
-        </div>
+        <h1 id="right">editing videos</h1>
+        <p id="right">Although it is a weird hobby, I like to take videos and edit them. I usually make a documentaries of my family members, mostly my dog, or a movie trailer. When I edit, I use the program <a href="https://inshot.com">InShot</a> but I hope to switch it soon because its tools are limited. If you know a good editing program, please contact me!</p>
 
-        <h1>coding</h1>
-        <div id="seperate">
-            <p>I learn coding on Sundays in a class called <a href="https://www.teensprogramming.com/#">Teensprograming</a>. Whether it's homework or not, I enjoy coding and webpage design. I look forward to learn more and eventually learn to code a game!</p>
-        </div>
+        <h1 id="left">coding</h1>
+        <p>I learn coding on Sundays in a class called <a href="https://www.teensprogramming.com/#">Teensprograming</a>. Whether it's homework or not, I enjoy coding and webpage design. I look forward to learn more and eventually learn to code a game!</p>
     </section>
 
     <section id="gallery">
@@ -557,22 +518,17 @@
             <i class="fa-solid fa-seedling"></i>
             <hr>
         </div>
-        <img src="images/gallery1.jpg" alt="" id='g1'>
-        <img src="images/gallery2.jpg" alt="" id='g2'>
-        <img src="images/gallery3.jpg" alt="" id='g3'>
-        <img src="images/gallery4.jpg" alt="" id='g4'>
-        <img src="images/gallery5.jpg" alt="" id='g5'>
-        <img src="images/gallery6.jpg" alt="" id='g6'>
-        <img src="images/gallery8.jpg" alt="" id='g8'>
-        <img src="images/gallery9.jpg" alt="" id='g9'>
-        <img src="images/gallery10.jpg" alt="" id='g10'>
-        <img src="images/gallery7.jpg" alt="" id='g7'>
+        <a href="images/gallery1.jpg" alt="" download><img src="images/gallery1.jpg" alt="" id="g1"></a>
+        <a href="images/gallery2.jpg" download><img src="images/gallery2.jpg" alt="" id='g2'></a>
+        <a href="images/gallery3.jpg" download><img src="images/gallery3.jpg" alt="" id='g3'></a>
+        <a href="images/gallery4.jpg" download><img src="images/gallery4.jpg" alt="" id='g4'></a>
+        <a href="images/gallery5.jpg" download><img src="images/gallery5.jpg" alt="" id='g5'></a>
+        <a href="images/gallery6.jpg" download><img src="images/gallery6.jpg" alt="" id='g6'></a>
+        <a href="images/gallery8.jpg" download><img src="images/gallery8.jpg" alt="" id='g8'></a>
+        <a href="images/gallery9.jpg" download><img src="images/gallery9.jpg" alt="" id='g9'></a>
+        <a href="images/gallery10.jpg" download><img src="images/gallery10.jpg" alt="" id='g10'></a>
+        <a href="images/gallery7.jpg" download><img src="images/gallery7.jpg" alt="" id='g7'></a>
     </section>
-
-
-
-
-
 
     <section id="mail">
         <ul>
@@ -604,11 +560,9 @@
                 </a>
             </li>
         </ul>
-
     </section>
 
     <footer>
         Copyright &copy; Juwon 2023
     </footer>
-
 </body></html>
