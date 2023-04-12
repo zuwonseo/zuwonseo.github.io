@@ -1,586 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css" integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="images/icon4.png" type="x-icon">
+    <title>geo race</title>
     <style>
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth
         }
 
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            overflow-x: hidden;
         }
 
-        .icon-arrow-up {
-            font-size: 29px;
-            border: solid;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.48);
-            right: 0;
-            bottom: 0;
-            color: white;
-            position: fixed;
-            margin: 10px;
-        }
-
-        button {
-            border: solid;
-            background-color: transparent;
-            border-radius: 10px;
-            font-size: 24px;
-            transition: 0.3s;
+        section {
+            width: 100%;
+            /*            text-align: center;*/
+            padding: 52px 25px;
+            font-family: 'georama'
         }
 
         h1 {
-            font-family: 'barlow condensed';
-            text-transform: uppercase;
-            font-size: 65px;
-            text-align: center;
-        }
-
-        .seperator {
-            text-align: center;
-            margin: 17px 0px;
-        }
-
-        .seperator hr {
-            display: inline-block;
-            width: 100px;
-            height: 5px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .seperator i {
-            font-size: 30px;
-            margin: 0 15px;
-            vertical-align: middle;
+            font-family: 'Georama';
+            font-size: 50px;
         }
 
         #nav {
-            width: 100%;
-            background-color: rgb(114, 150, 47);
+            padding: 25px;
+            background-color: #4c604d;
+            color: #fffffb;
+            text-align: left;
             position: fixed;
-            color: white;
-            padding: 0px 25px;
-            z-index: 1;
+            z-index: 100
         }
 
-        #nav h1 {
-            line-height: 92px;
-            margin: 10px 0px;
-            text-align: left;
-        }
-
-        #nav li {
-            font-size: 0px;
-            font-family: 'barlow condensed';
-            text-transform: uppercase;
-            font-weight: 500;
-            transition: 0.3s;
-            list-style: none;
-        }
-
-        #nav li:hover {
-            font-size: 50px;
-        }
-
-        #nav a {
-            text-decoration-line: none;
-            color: transparent;
-        }
-
-        #intro {
-            width: 100%;
-            background-color: #f5ffe4;
-            padding: 200px 0px;
+        #home {
+            height: 100vh;
+            background-image: url(https://www.pngall.com/wp-content/uploads/2017/05/World-Map-Free-Download-PNG.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-color: #edf2e5;
+            color: #6c846d;
             text-align: center;
+            margin-top: 112px
         }
 
-        #intro img {
-            width: 400px;
-            border-radius: 30px;
-            margin-top: 34px;
+        #home img {
+            height: 30px;
+            width: 30px;
+            border-radius: 10px;
+            position: absolute;
+            border: solid #6c846d;
+            transition: 0.6s
         }
 
-        #intro h1 {
-            color: rgba(80, 106, 82, 0.78);
-            text-transform: capitalize;
+        #home img:hover {
+            transform: scale(2)
         }
 
-        #intro hr {
-            background-color: rgba(80, 106, 82, 0.78);
+        #san-f {
+            top: 62%;
+            left: 20%;
         }
 
-        #intro div:first-of-type {
-            margin: 17px;
-            color: rgba(80, 106, 82, 0.78);
+        #san-t {
+            top: 100%;
+            left: 31%
         }
 
-        #intro p {
-            font-size: 28px;
-            font-family: 'nunito';
-            width: 80%;
-            display: inline-block;
-            color: rgba(30, 54, 32, 0.78);
+        #v-n {
+            top: 60%;
+            left: 51%
         }
 
-        #contact {
-            background-color: #2e5a29;
-            color: #dde8c8;
-            text-align: center;
-            padding: 72px 0px;
+        #c-r {
+            top: 67%;
+            left: 55%;
         }
 
-        #contact hr {
-            background-color: #dde8c8;
+        #s-l {
+            top: 63%;
+            left: 76%
         }
 
-        #contact div:first-of-type {
-            color: #dde8c8;
+        #m-b {
+            top: 99%;
+            left: 80%;
         }
 
-        input,
-        textarea {
-            font-size: 24px;
-            font-family: 'nunito';
-            background-color: transparent;
-            border: none;
-            border-bottom-color: #dde8c8;
-            border-bottom-style: solid;
-            color: #dde8c8;
-            width: 80%;
-            padding: 18px 0px;
-            display: block;
-            margin: 10px auto;
+        #franny,
+        #venice,
+        #seoul {
+            background-color: #6c846d;
+            color: aliceblue
         }
 
-        textarea {
-            max-width: 80%;
-            min-width: 80%;
-            min-height: 150px;
-            max-height: 355px;
-        }
-
-        ::placeholder {
-            color: #dde8c8;
-        }
-
-        #contact button {
-            width: 30%;
-            height: 64px;
-            color: #dde8c8;
-            font-family: 'nunito';
-        }
-
-        #contact button:hover {
-            background-color: #dde8c8;
-            color: #2e5a29;
-            width: 32%;
-            height: 78px;
-        }
-
-        #about {
-            background-color: #f0ffdc;
-            color: #446930;
-            padding: 72px 0px;
-            text-align: center;
-        }
-
-        #about hr {
-            background-color: #446930;
-        }
-
-        #about p {
-            font-family: 'nunito';
-            font-size: 30px;
-            margin: 20px 30px;
-            text-align: left;
-        }
-
-        #about button {
-            margin: 35px 0px;
-            font-family: 'nunito';
-            color: #446930;
-            padding: 17px 27px;
-        }
-
-        #about button:hover {
-            color: #f0ffdc;
-            background-color: #446930;
-            padding: 20px 30px;
-        }
-
-        #more {
-            background-color: #316f3a;
-            padding: 72px 0px;
-            color: #faffc2;
-            text-align: center;
-        }
-
-        #more hr {
-            background-color: #faffc2;
-        }
-
-        #more h1:not(h1:first-of-type) {
-            font-family: 'nunito';
-            font-weight: 500;
-            font-size: 34px;
-            margin-top: 80px;
-        }
-
-        #more h2 {
-            font-family: 'nunito';
-            font-size: 90px;
-            text-transform: capitalize;
-            font-weight: 900;
-        }
-
-        #more button {
-            font-family: 'roboto condensed';
-            color: #faffc2;
-            padding: 15px 50px;
-        }
-
-        #more button:hover {
-            padding: 20px 55px;
-            background-color: #faffc2;
-            color: #316f3a
-        }
-
-        #hobbies a {
-            color: #83d086;
-        }
-
-        #hobbies hr {
-            background-color: #0f5d24;
-        }
-
-        #hobbies {
-            background-color: #ffffc7;
-            color: #0f5d24;
-            padding: 72px 27px;
-        }
-
-        #hobbies h1:not(h1:first-of-type) {
-            font-family: 'nunito';
-            font-weight: 900;
-            font-size: 70px;
-            margin-bottom: 32px;
-            margin-top: 22px
-        }
-
-        #right {
+        #santiago,
+        #cairo,
+        #melbourne {
+            background-color: aliceblue;
+            color: #6c846d;
             text-align: right;
         }
 
-        #left {
-            text-align: left;
+        img {
+            border: solid 10px;
+            width: 650px;
         }
 
-        #hobbies p {
-            font-family: 'nunito';
-            font-size: 25px;
+        p {
+            /*            border: solid;*/
             display: inline-block;
+            font-size: 30px;
+            width: 41%;
+            vertical-align: top;
+            /*            border: solid;*/
+            margin: 0px 50px;
+            line-height: 1.6
         }
 
-        #gallery {
-            background-color: #43674e;
-            color: beige;
-            padding: 90px 10px;
-            text-align: center;
+        h1:not(#nav h1) {
+            padding-bottom: 70px
         }
 
-        #gallery a,
-        video {
-            color: beige;
-            
+        section:not(#home, #nav) {
+            padding: 72px 72px
         }
 
-        #gallery img {
-            border: solid 10px;
-            border-radius: 10px;
-            transition: 0.3s;
-            margin-top: 21px;
-            width: 78%;
-        }
-
-        #gallery img:hover {
-            transform: scale(1.12)
-        }
-
-        #gallery hr {
-            background-color: beige;
-        }
-
-        #gallery video {
-            width: 76%;
-            border: solid 10px;
-            border-radius: 10px;
-            margin-top: 21px;
-        }
-
-        #mail {
-            height: 400px;
-            text-align: center;
-            padding: 72px 0px;
-            background-color: #51723b;
-            color: #e3efa7;
-        }
-
-        #mail hr {
-            background-color: #e3efa7;
-        }
-
-        #mail .seperator {
-            margin: 17px 0px;
-        }
-
-        #mail i:not(.seperator i) {
-            font-size: 50px;
+        iframe {
+            width: 44%;
+            display: inline-block;
             border: solid;
-            color: rgba(245, 245, 220, 0.58);
-            transition: 0.2s;
-            width: 95px;
-            height: 95px;
-            padding: 15px;
-            border-radius: 19px;
         }
 
-        #mail li {
-            display: inline-block;
-            margin: 0px 16px;
+        .graph {
+            width: 44%;
         }
-
-        #mail i:not(.seperator i):hover {
-            background-color: beige;
-            color: #51723b;
-            transform: scale(1.12)
-        }
-
-        #mail i.fa-discord {
-            text-align: center;
-            line-height:
-        }
-
-        footer {
-            text-align: center;
-            font-family: 'nunito';
-            padding: 10px;
-            background-color: #305d30;
-            color: beige;
-        }
-
-        @media all and (min-width:745px) {
-            #gallery img {
-                display: inline-block;
-                width: 25%;
-            }
-
-            #g7 {
-                width: 33% !important;
-            }
-        }
-
-        @media all and (min-width:1200px) {
-            #nav a {
-                color: white;
-            }
-
-            #nav h1,
-            #nav ul,
-            #nav li {
-                display: inline-block;
-                line-height: 95px;
-                vertical-align: middle;
-            }
-
-            #nav li {
-                margin: 0px 1.6%;
-                font-size: 40px;
-            }
-
-            #nav ul {
-                width: 70%;
-                text-align: right;
-            }
-
-            #about p {
-                display: inline-block;
-                width: 30%;
-                vertical-align: top;
-            }
-        }
-
     </style>
 </head>
 
 <body>
     <section id="nav">
-        <h1>Juwon seo</h1>
-        <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#more">more</a></li>
-            <li><a href="#gallery">gallery</a></li>
-        </ul>
+        <h1>Amazing Geo Race</h1>
+    </section>
+    <section class="" id="home">
+        <h1>Our Map</h1>
+        <a href="#franny"><img src="https://images.unsplash.com/photo-1500111709600-7761aa8216c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="san-f"></a>
+        <a href="#santiago"><img src="https://media.istockphoto.com/id/1095471704/photo/aaerial-view-of-santiago-skyline-at-sunset-with-costanera-skyscraper-and-andes-mountains.jpg?b=1&s=170667a&w=0&k=20&c=L9GMPfA4XDYKnw9Nwj9Az_2HiftRSMpGRHg7-OmbZhw=" alt="" id="san-t"></a>
+        <a href="#venice"><img src="https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" id="v-n"></a>
+        <a href="#cairo"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="c-r"></a>
+        <a href="#seoul"><img src="https://images.unsplash.com/photo-1538485399081-7191377e8241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=374&q=80" alt="" id="s-l"></a>
+        <a href="#melbourne"><img src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" id="m-b"></a>
     </section>
 
-    <a href="#intro"><i class="icon-arrow-up"></i></a>
-    <section id="intro">
-        <h1>hello my name is Juwon</h1>
-        <img src="images/hodu%20laydown.jpg" alt="">
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-
-        <div>
-            <p>Student - A Dog's Owner</p>
-        </div>
+    <section id="franny">
+        <h1>San Francisco, US</h1>
+        <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        <p>Our first city is San Francisco, United States! Its coordinates are 37.5°N, 122.5°W. It is located iin Northern California on a peninsula between the Pacific Ocean and San Francisco Bay. </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.18159930939!2d-122.52000111441289!3d37.757671314963716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681251290289!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="" alt="">
     </section>
 
-    <section id="contact">
-        <h1>Contact me</h1>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-        <form action="">
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="tel" name='tel' placeholder="Phone Number">
-            <textarea name="com" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <section id="santiago">
+        <h1>Santiago, Chile</h1>
+        <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        <p>Next city is Santiago, Chile. Its coordinates are 33.5°S, 70.7°W and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast.</p>
     </section>
 
-
-    <section id="about">
-        <h1>about me</h1>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-        <p>Likes dogs, has a dog and loves that dog. The dog's name is Hodu. Has a sister named Juha. Has a mother named Su and has a father named Jae Sung.
-        </p>
-        <p>Likes tennis and volleyball. favourite food is everything except for foods with mustard or mayo. Loves coding and playing board/video games.</p>
-        <div id="center">
-            <a href="images/hodu%20stare%20at%20u.jpg" alt="" download><button><i class="fa-regular fa-circle-down"></i> Click Here For Hodu!</button></a>
-        </div>
+    <section id="venice">
+        <h1>Venice, Italy</h1>
+        <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        <p>Next up is Venice, Italy, located on 45.4° N, 12.3° E. It is in northern Italy, on the northwestern part of the Adriatic Sea.</p>
     </section>
 
-    <section id="more">
-        <h1>more about me</h1>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-        <h1>my birthstone:
-        </h1>
-        <h2>emerald</h2>
-        <a href="https://images.sampletemplates.com/wp-content/uploads/2015/11/13053124/Birthstone-Chart-by-Month.jpg" alt="" download target="_blank">
-            <button>What's Yours?</button>
-        </a>
-        <h1>my personality:</h1>
-        <h2>ISTJ</h2><a href="https://www.16personalities.com/free-personality-test" alt="" download target="_blank">
-            <button>Test Yours!</button>
-        </a>
-        <h1>my constellation:</h1>
-        <h2>Taurus</h2>
-        <a href="https://cf.ltkcdn.net/horoscopes/images/std-xs/287813-340x454-astrological-sign-glyphs-symbols.png" target="_blank"><button>What's Yours?</button></a>
+    <section id="cairo">
+        <h1>Cairo, Egypt</h1>
+        <img src="https://images.unsplash.com/photo-1561714645-2b6505711ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="">
+        <p>The third city is Cairo, Egypt, located on 30.0° N, 31.2° E. It is in northeastern Egypt, primarily on the eastern shore of the Nile River.</p>
     </section>
 
-    <section id="hobbies">
-        <h1>my hobbies</h1>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-        <h1 id="left">drawing</h1>
-        <p>I usually use my <a href="https://www.apple.com/ca/ipad-pro/?afid=p238%7Cs0xk854YD-dc_mtid_1870765e38482_pcrid_624872989600_pgrid_117378708841_pntwk_g_pchan__pexid__&cid=aos-ca-kwGO-ipad--slid---product-">Ipad</a> and <a href="https://www.apple.com/ca/shop/product/MU8F2AM/A/apple-pencil-2nd-generation">Apple Pencil</a> to draw. I usually draw cartoon characters or draw animations. The programs I use is <a href="https://procreate.com/">Procreate</a> for just drawing and <a href="https://flipaclip.com/">Flipaclip</a> for animating. Sometimes I like to use paper and pencil for making stop motions.</p>
-
-        <h1 id="right">editing videos</h1>
-        <p id="right">Although it is a weird hobby, I like to take videos and edit them. I usually make a documentaries of my family members, mostly my dog, or a movie trailer. When I edit, I use the program <a href="https://inshot.com">InShot</a> but I hope to switch it soon because its tools are limited. If you know a good editing program, please contact me!</p>
-
-        <h1 id="left">coding</h1>
-        <p>I learn coding on Sundays in a class called <a href="https://www.teensprogramming.com/#">Teensprograming</a>. Whether it's homework or not, I enjoy coding and webpage design. I look forward to learn more and eventually learn to code a game!</p>
+    <section id="seoul">
+        <h1>Seoul, South Korea</h1>
+        <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
+        <p>Fourth city is Seoul, South Korea. Its coordinates are 37.6° N, 126.9° E. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores.</p>
     </section>
 
-    <section id="gallery">
-        <h1>my gallery</h1>
-        <div class="seperator">
-            <hr>
-            <i class="fa-solid fa-seedling"></i>
-            <hr>
-        </div>
-        <a href="images/gallery1.jpg" alt="" download><img src="images/gallery1.jpg" alt="" id="g1"></a>
-        <a href="images/gallery2.jpg" download><img src="images/gallery2.jpg" alt="" id='g2'></a>
-        <a href="images/gallery3.jpg" download><img src="images/gallery3.jpg" alt="" id='g3'></a>
-        <a href="images/gallery4.jpg" download><img src="images/gallery4.jpg" alt="" id='g4'></a>
-        <a href="images/gallery5.jpg" download><img src="images/gallery5.jpg" alt="" id='g5'></a>
-        <a href="images/gallery6.jpg" download><img src="images/gallery6.jpg" alt="" id='g6'></a>
-        <a href="images/gallery8.jpg" download><img src="images/gallery8.jpg" alt="" id='g8'></a>
-        <a href="images/gallery9.jpg" download><img src="images/gallery9.jpg" alt="" id='g9'></a>
-        <a href="images/gallery10.jpg" download><img src="images/gallery10.jpg" alt="" id='g10'></a>
-        <a href="images/gallery7.jpg" download><img src="images/gallery7.jpg" alt="" id='g7'></a>
-        <a href="images/gallery11.jpg" download><img src="images/gallery11.jpg" alt="" id='g11'></a>
-        <a href="images/gallery12.jpg" download><img src="images/gallery12.jpg" alt="" id='g12'></a>
-        
-        <video src="images/IMG_2695.mov" controls=video></video>
-        <video src="images/69592303112__A5EC4956-9DE5-465F-8512-8FE38E54E971.MOV" controls=video></video>
+    <section id="melbourne">
+        <h1>Melbourne, Austrailia</h1>
+        <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+        <p>Last city is Melbourne, Australia. Its coordinates are 37.8° S, 144.9° E. Its located in southeastern part of mainland Australia, within the state of Victoria.</p>
     </section>
-
-    <section id="mail">
-        <ul>
-
-            <h1>mail me</h1>
-            <div class="seperator">
-                <hr>
-                <i class="fa-solid fa-seedling"></i>
-                <hr>
-            </div>
-            <li>
-                <a href="https://discordapp.com/users/1014943908058365952">
-                    <abbr title="This will take you to discord">
-                        <i class="fa-brands fa-discord"></i>
-                    </abbr>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:zuwongseo@gmail.com"> <abbr title="May not always be available">
-                        <i class="fa-solid fa-envelope"></i>
-                    </abbr>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:greatgreatcandy@gmail.com">
-                    <abbr title="Second email">
-                        <i class="fa-regular fa-envelope"></i>
-                    </abbr>
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <footer>
-        Copyright &copy; Juwon 2023
-    </footer>
-</body>
-
-</html>
+</body></html>
