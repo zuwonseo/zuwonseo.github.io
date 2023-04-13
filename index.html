@@ -22,8 +22,11 @@
         section {
             width: 100%;
             text-align: center;
-            padding: 52px 25px;
             font-family: 'georama'
+        }
+
+        section:not(#nav, #home) {
+            padding-top: 52px;
         }
 
         h1 {
@@ -53,7 +56,7 @@
 
         #franny hr,
         #venice hr,
-        #seoul hr{
+        #seoul hr {
             background-color: aliceblue;
         }
 
@@ -76,7 +79,8 @@
             background-color: #edf2e5;
             color: #6c846d;
             text-align: center;
-            margin-top: 112px
+            margin-top: 112px;
+            padding: 52px 0px;
         }
 
         #home img {
@@ -93,33 +97,33 @@
         }
 
         #san-f {
-            top: 62%;
+            top: 57%;
             left: 20%;
         }
 
         #san-t {
-            top: 100%;
-            left: 31%
+            top: 92%;
+            left: 30%
         }
 
         #v-n {
-            top: 60%;
-            left: 51%
+            top: 53%;
+            left: 49%
         }
 
         #c-r {
-            top: 67%;
-            left: 55%;
+            top: 60%;
+            left: 54%;
         }
 
         #s-l {
-            top: 63%;
-            left: 76%
+            top: 56%;
+            left: 74%
         }
 
         #m-b {
-            top: 99%;
-            left: 80%;
+            top: 91%;
+            left: 79%;
         }
 
         #franny,
@@ -138,25 +142,36 @@
 
         img {
             border: solid 10px;
-            width: 30%;
+            width: 37%;
+            margin-top: 30px
         }
 
         p {
             /*            border: solid;*/
             display: inline-block;
             font-size: 30px;
-            width: 41%;
+            width: 37%;
             vertical-align: top;
             margin: 0px 50px;
             line-height: 1.6;
             text-align: left;
+            margin-top: 30px
         }
 
-        iframe {
-            width: 44%;
-            display: inline-block;
-            border: solid;
+        .map {
+            width: 100%;
+            border: solid 10px;
+            margin-top: 50px;
+            height: 220px;
         }
+
+        .graph {
+            width: 37%;
+            margin: 0px 50px;
+            border: solid 10px;
+            margin-top: 30px
+        }
+
     </style>
 </head>
 
@@ -183,7 +198,9 @@
         </div>
         <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
         <p>Our first city is San Francisco, United States! Its coordinates are 37.5°N, 122.5°W. It is located iin Northern California on a peninsula between the Pacific Ocean and San Francisco Bay. </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.18159930939!2d-122.52000111441289!3d37.757671314963716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681251290289!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ab numquam eius vel soluta ullam modi sint? Eligendi dolor, laborum dicta rerum eos ea ipsam consequuntur, reprehenderit modi asperiores iure.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1043225832&amp;format=image" class='graph' alt="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349852.343108741!2d-122.47013185031531!3d37.67659004416447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681345766598!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
     <section id="santiago">
@@ -196,6 +213,9 @@
         <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
         <p>Next city is Santiago, Chile. Its coordinates are 33.5°S, 70.7°W and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast. Santiago has a cool semi-arid climate. With mediterranean patterns with warm dry summers and cold humid winters. It doesn't have the four seasons.On the hottest days, temperatures reach up to 35°C.
         </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cupiditate perferendis aperiam libero maxime optio quod architecto, minima fugit velit possimus error perspiciatis quis repellat, distinctio id dolorum, iure magni.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1831811555&amp;format=image" alt="" class="graph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.96335289988!2d-70.94164758338768!3d-33.47211113201714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Santiago%20Metropolitan%20Region%2C%20Chile!5e0!3m2!1sen!2sca!4v1681354077867!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
     <section id="venice">
@@ -207,6 +227,9 @@
         </div>
         <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
         <p>Next up is Venice, Italy, located on 45.4° N, 12.3° E. It is in northern Italy, on the northwestern part of the Adriatic Sea.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsa perspiciatis ex, doloremque sunt eaque fugiat temporibus reiciendis vero atque eius aperiam corrupti saepe nulla rem officiis dolor neque autem.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1733097958&amp;format=image" alt="" class="graph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358237.8023155488!2d12.202475740532277!3d45.45503967446372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eaa16cb134829%3A0x307098715907f10!2sMetropolitan%20City%20of%20Venice%2C%20Italy!5e0!3m2!1sen!2sca!4v1681354446286!5m2!1sen!2sca" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section id="cairo">
@@ -220,6 +243,10 @@
         <p>The third city is Cairo, Egypt, located on 30.0° N, 31.2° E. It is in northeastern Egypt, primarily on the eastern shore of the Nile River.
             Cairo’s climate is dry, hot, and dominated by desert. During mild winters there is rain falling along the coastal areas, and summers are extremely hot. Prevailing winds change daytime temperatures.
         </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus, dolorem consequuntur impedit numquam placeat amet deserunt saepe et minus, eaque maiores non reprehenderit iste! Vitae, totam quo aspernatur deserunt?</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=255699074&amp;format=image" alt="" class="graph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663491335!2d31.217264820551346!3d30.059556316618387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sca!4v1681354599843!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
     </section>
 
     <section id="seoul">
@@ -231,6 +258,9 @@
         </div>
         <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
         <p>Fourth city is Seoul, South Korea. Its coordinates are 37.6° N, 126.9° E. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores. Seoul’s climate is overall humid but with a very dry winter. It has four seasons, and temperature changes can be extreme, with really hot summers and extremely cold winters. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae excepturi quas quae magnam nostrum, modi maiores, dolor deserunt fuga nam fugiat, adipisci temporibus. Libero at, sunt autem ex ut.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1901952207&amp;format=image" alt="" class="graph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.91416962314!2d126.80933255913146!3d37.565033714027166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sca!4v1681354695079!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
     <section id="melbourne">
@@ -242,5 +272,10 @@
         </div>
         <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
         <p>Last city is Melbourne, Australia. Its coordinates are 37.8° S, 144.9° E. Its located in southeastern part of mainland Australia, within the state of Victoria.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, numquam, distinctio. Quam eaque ab distinctio sed quidem accusamus sapiente fugit adipisci eius asperiores excepturi, corporis facere inventore perspiciatis reiciendis. Molestiae.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1630442937&amp;format=image" alt="" class="graph">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402590.51601501025!2d144.7235034028447!3d-37.97156522175328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sca!4v1681354734349!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
-</body></html>
+</body>
+
+</html>
