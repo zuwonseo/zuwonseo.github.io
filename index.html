@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +21,7 @@
 
         section {
             width: 100%;
-            /*            text-align: center;*/
+            text-align: center;
             padding: 52px 25px;
             font-family: 'georama'
         }
@@ -29,6 +30,33 @@
             font-family: 'Georama';
             font-size: 50px;
         }
+
+        .seperator {
+            text-align: center;
+            margin: 46px 0px;
+        }
+
+        .seperator hr {
+            display: inline-block;
+            width: 117px;
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c846d;
+        }
+
+        .seperator i {
+            font-size: 41px;
+            margin: 0 15px;
+            vertical-align: middle;
+        }
+
+        #franny hr,
+        #venice hr,
+        #seoul hr{
+            background-color: aliceblue;
+        }
+
 
         #nav {
             padding: 25px;
@@ -106,12 +134,11 @@
         #melbourne {
             background-color: aliceblue;
             color: #6c846d;
-            text-align: right;
         }
 
         img {
             border: solid 10px;
-            width: 650px;
+            width: 30%;
         }
 
         p {
@@ -120,27 +147,15 @@
             font-size: 30px;
             width: 41%;
             vertical-align: top;
-            /*            border: solid;*/
             margin: 0px 50px;
-            line-height: 1.6
-        }
-
-        h1:not(#nav h1) {
-            padding-bottom: 70px
-        }
-
-        section:not(#home, #nav) {
-            padding: 72px 72px
+            line-height: 1.6;
+            text-align: left;
         }
 
         iframe {
             width: 44%;
             display: inline-block;
             border: solid;
-        }
-
-        .graph {
-            width: 44%;
         }
     </style>
 </head>
@@ -161,38 +176,70 @@
 
     <section id="franny">
         <h1>San Francisco, US</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
         <p>Our first city is San Francisco, United States! Its coordinates are 37.5°N, 122.5°W. It is located iin Northern California on a peninsula between the Pacific Ocean and San Francisco Bay. </p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.18159930939!2d-122.52000111441289!3d37.757671314963716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681251290289!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img src="" alt="">
     </section>
 
     <section id="santiago">
         <h1>Santiago, Chile</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-        <p>Next city is Santiago, Chile. Its coordinates are 33.5°S, 70.7°W and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast.</p>
+        <p>Next city is Santiago, Chile. Its coordinates are 33.5°S, 70.7°W and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast. Santiago has a cool semi-arid climate. With mediterranean patterns with warm dry summers and cold humid winters. It doesn't have the four seasons.On the hottest days, temperatures reach up to 35°C.
+        </p>
     </section>
 
     <section id="venice">
         <h1>Venice, Italy</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
         <p>Next up is Venice, Italy, located on 45.4° N, 12.3° E. It is in northern Italy, on the northwestern part of the Adriatic Sea.</p>
     </section>
 
     <section id="cairo">
         <h1>Cairo, Egypt</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://images.unsplash.com/photo-1561714645-2b6505711ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="">
-        <p>The third city is Cairo, Egypt, located on 30.0° N, 31.2° E. It is in northeastern Egypt, primarily on the eastern shore of the Nile River.</p>
+        <p>The third city is Cairo, Egypt, located on 30.0° N, 31.2° E. It is in northeastern Egypt, primarily on the eastern shore of the Nile River.
+            Cairo’s climate is dry, hot, and dominated by desert. During mild winters there is rain falling along the coastal areas, and summers are extremely hot. Prevailing winds change daytime temperatures.
+        </p>
     </section>
 
     <section id="seoul">
         <h1>Seoul, South Korea</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
-        <p>Fourth city is Seoul, South Korea. Its coordinates are 37.6° N, 126.9° E. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores.</p>
+        <p>Fourth city is Seoul, South Korea. Its coordinates are 37.6° N, 126.9° E. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores. Seoul’s climate is overall humid but with a very dry winter. It has four seasons, and temperature changes can be extreme, with really hot summers and extremely cold winters. </p>
     </section>
 
     <section id="melbourne">
         <h1>Melbourne, Austrailia</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-earth-americas"></i>
+            <hr>
+        </div>
         <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
         <p>Last city is Melbourne, Australia. Its coordinates are 37.8° S, 144.9° E. Its located in southeastern part of mainland Australia, within the state of Victoria.</p>
     </section>
