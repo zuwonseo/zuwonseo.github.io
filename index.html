@@ -4,6 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css" integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +19,20 @@
             padding: 0;
             overflow-x: hidden;
         }
+
+        .icon-arrow-up {
+            font-size: 29px;
+            border: solid;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.48);
+            right: 0;
+            bottom: 0;
+            color: white;
+            position: fixed;
+            margin: 10px;
+        }
+
 
         section {
             width: 100%;
@@ -92,7 +107,7 @@
         }
 
         #home img:hover {
-            transform: scale(2)
+            transform: scale(4)
         }
 
         #san-f {
@@ -106,13 +121,13 @@
         }
 
         #v-n {
-            top: 55%;
+            top: 56%;
             left: 49%
         }
 
         #c-r {
             top: 62%;
-            left: 54%;
+            left: 53%;
         }
 
         #s-l {
@@ -170,18 +185,20 @@
             border: solid 10px;
             margin-top: 30px
         }
-        
-        footer{
+
+        footer {
             font-family: 'georama';
             background-color: #4c604d;
             color: #fffffb;
             padding: 10px 0px;
             text-align: center;
         }
+
     </style>
 </head>
 
 <body>
+    <a href="#home"><i class="icon-arrow-up"></i></a>
     <section id="nav">
         <h1>Amazing Geo Race</h1>
     </section>
@@ -191,7 +208,7 @@
         <a href="#santiago"><img src="https://media.istockphoto.com/id/1095471704/photo/aaerial-view-of-santiago-skyline-at-sunset-with-costanera-skyscraper-and-andes-mountains.jpg?b=1&s=170667a&w=0&k=20&c=L9GMPfA4XDYKnw9Nwj9Az_2HiftRSMpGRHg7-OmbZhw=" alt="" id="san-t"></a>
         <a href="#venice"><img src="https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" id="v-n"></a>
         <a href="#cairo"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="c-r"></a>
-        <a href="#seoul"><img src="https://images.unsplash.com/photo-1538485399081-7191377e8241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=374&q=80" alt="" id="s-l"></a>
+        <a href="#seoul"><img src="https://images.unsplash.com/photo-1506816561089-5cc37b3aa9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="" id="s-l"></a>
         <a href="#melbourne"><img src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" id="m-b"></a>
     </section>
 
@@ -203,8 +220,9 @@
             <hr>
         </div>
         <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-        <p>Our first city is San Francisco, United States! Its coordinates are 37.5°N, 122.5°W. It is located iin Northern California on a peninsula between the Pacific Ocean and San Francisco Bay. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ab numquam eius vel soluta ullam modi sint? Eligendi dolor, laborum dicta rerum eos ea ipsam consequuntur, reprehenderit modi asperiores iure.</p>
+        <p>Our first city is San Francisco, United States! Its coordinates are <b>37.5°N, 122.5°W</b>. It is located iin Northern California on a peninsula between the Pacific Ocean and San Francisco Bay. </p>
+        <p>San Francisco has a <b>mediterranean</b> type climate with only two seasons, winter, and summer. The summers are hot, mild, and dry. In the winter there is more precipitation . During the year the temperature varies from 7°C to 22°C but overall does not change drastically through the seasons.
+        </p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1043225832&amp;format=image" class='graph' alt="">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349852.343108741!2d-122.47013185031531!3d37.67659004416447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681345766598!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
@@ -217,10 +235,11 @@
             <hr>
         </div>
         <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-        <p>Next city is Santiago, Chile. Its coordinates are 33.5°S, 70.7°W and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast. Santiago has a cool semi-arid climate. With mediterranean patterns with warm dry summers and cold humid winters. It doesn't have the four seasons.On the hottest days, temperatures reach up to 35°C.
+        <p>Next city is Santiago, Chile. Its coordinates are <b>33.5°S, 70.7°W</b> and it is located in Chile's Maipo Valley surrounded by the Andes Mountain Range, about 100 km east of the Pacific Ocean coast. The distance between Santiago and San Francisco is <b>5,935 km</b>.
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cupiditate perferendis aperiam libero maxime optio quod architecto, minima fugit velit possimus error perspiciatis quis repellat, distinctio id dolorum, iure magni.</p>
-        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1831811555&amp;format=image" alt="" class="graph">
+        <p>Santiago has a cool semi-arid climate. With <b>mediterranean</b> patterns with warm dry summers and cold humid winters. It doesn't have the four seasons. On the hottest days, temperatures reach up to 35°C.
+        </p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=385391039&amp;format=image" alt="" class="graph">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.96335289988!2d-70.94164758338768!3d-33.47211113201714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Santiago%20Metropolitan%20Region%2C%20Chile!5e0!3m2!1sen!2sca!4v1681354077867!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
@@ -232,9 +251,9 @@
             <hr>
         </div>
         <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-        <p>Next up is Venice, Italy, located on 45.4° N, 12.3° E. It is in northern Italy, on the northwestern part of the Adriatic Sea.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsa perspiciatis ex, doloremque sunt eaque fugiat temporibus reiciendis vero atque eius aperiam corrupti saepe nulla rem officiis dolor neque autem.</p>
-        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1733097958&amp;format=image" alt="" class="graph">
+        <p>Next up is Venice, Italy, located on <b>45.4° N, 12.3° E</b>. It is in northern Italy, on the northwestern part of the Adriatic Sea. It is <b>12,084 km</b> away from santiago.</p>
+        <p>Venice has a mid-latitude, four season <b>humid subtropical</b> climate. The summers are warm and humid, the winters are very cold, and it is partly cloudy year round. Over the course of the year, the temperature typically varies from 0°C to 23°C and is rarely below -4°C or above 32°C.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=127452618&amp;format=image" alt="" class="graph">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358237.8023155488!2d12.202475740532277!3d45.45503967446372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eaa16cb134829%3A0x307098715907f10!2sMetropolitan%20City%20of%20Venice%2C%20Italy!5e0!3m2!1sen!2sca!4v1681354446286!5m2!1sen!2sca" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
@@ -246,11 +265,11 @@
             <hr>
         </div>
         <img src="https://images.unsplash.com/photo-1561714645-2b6505711ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="">
-        <p>The third city is Cairo, Egypt, located on 30.0° N, 31.2° E. It is in northeastern Egypt, primarily on the eastern shore of the Nile River.
-            Cairo’s climate is dry, hot, and dominated by desert. During mild winters there is rain falling along the coastal areas, and summers are extremely hot. Prevailing winds change daytime temperatures.
+        <p>The third city is Cairo, Egypt, located on <b>30.0° N, 31.2° E</b>. It is in northeastern Egypt, primarily on the eastern shore of the Nile River. <b>2373 km</b> is the distance between Cairo and Venice.
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusamus, dolorem consequuntur impedit numquam placeat amet deserunt saepe et minus, eaque maiores non reprehenderit iste! Vitae, totam quo aspernatur deserunt?</p>
-        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=255699074&amp;format=image" alt="" class="graph">
+        <p>Cairo’s climate is dry, hot, and dominated by desert. During mild winters there is rain falling along the coastal areas, and summers are extremely hot. Prevailing winds change daytime temperatures.
+        </p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=127452618&amp;format=image" alt="" class="graph">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663491335!2d31.217264820551346!3d30.059556316618387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sca!4v1681354599843!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
     </section>
@@ -263,9 +282,9 @@
             <hr>
         </div>
         <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
-        <p>Fourth city is Seoul, South Korea. Its coordinates are 37.6° N, 126.9° E. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores. Seoul’s climate is overall humid but with a very dry winter. It has four seasons, and temperature changes can be extreme, with really hot summers and extremely cold winters. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae excepturi quas quae magnam nostrum, modi maiores, dolor deserunt fuga nam fugiat, adipisci temporibus. Libero at, sunt autem ex ut.</p>
-        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1901952207&amp;format=image" alt="" class="graph">
+        <p>Fourth city is Seoul, South Korea. Its coordinates are <b>37.6° N, 126.9° E</b>. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores. This city is <b>8,482 km</b> away from the previous city.</p>
+        <p>Seoul’s climate is overall humid but with a very dry winter. It has four seasons, and temperature changes can be extreme, with really hot summers and extremely cold winters. It is a <b>subtropical transitional climate</b>.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1944530039&amp;format=image" alt="" class="graph">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.91416962314!2d126.80933255913146!3d37.565033714027166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sca!4v1681354695079!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
@@ -277,13 +296,15 @@
             <hr>
         </div>
         <img src="https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
-        <p>Last city is Melbourne, Australia. Its coordinates are 37.8° S, 144.9° E. Its located in southeastern part of mainland Australia, within the state of Victoria.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, numquam, distinctio. Quam eaque ab distinctio sed quidem accusamus sapiente fugit adipisci eius asperiores excepturi, corporis facere inventore perspiciatis reiciendis. Molestiae.</p>
-        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1630442937&amp;format=image" alt="" class="graph">
+        <p>Last city is Melbourne, Australia. Its coordinates are <b>37.8° S, 144.9° E</b>. Its located in southeastern part of mainland Australia, within the state of Victoria. If you travel <b>8,575 km</b> from Seoul, you can get here.</p>
+        <p>Melbourne has a mild climate with four distinct seasons. It has hot summers, warm springs, mild autumns, and cool winters, and overall has a variable climate. Throughout the year the temperature varies from 14°C to 25°C and the precipitation stays consistent throughout. Melbourne's climate is <b>subtropical</b>.</p>
+        <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=813052868&amp;format=image" alt="" class="graph">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402590.51601501025!2d144.7235034028447!3d-37.97156522175328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sca!4v1681354734349!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
-    
+
     <footer>
         Copyright &copy; Juwon, Izzy and Maria, 2023
     </footer>
-</body></html>
+</body>
+
+</html>
