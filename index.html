@@ -91,7 +91,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 80%;
-            background-color: #edf2e5;
+            background-color: #ffffff;
             color: #6c846d;
             text-align: center;
             margin-top: 112px;
@@ -157,11 +157,10 @@
         img {
             border: solid 10px;
             width: 37%;
-            margin-top: 30px
+            margin-top: 30px;
         }
 
         p {
-            /*            border: solid;*/
             display: inline-block;
             font-size: 30px;
             width: 37%;
@@ -194,6 +193,20 @@
             text-align: center;
         }
 
+        .vegetation p {
+            width: 78%;
+        }
+
+        .vegetation img {
+            margin: 40px 5px;
+            border-radius: 22px;
+            width: 34%;
+            vertical-align: top;
+        }
+
+        .vegetation h1 {
+            margin-top: 50px;
+        }
     </style>
 </head>
 
@@ -204,12 +217,12 @@
     </section>
     <section class="" id="home">
         <h1>Our Map</h1>
-        <a href="#franny"><img src="https://images.unsplash.com/photo-1500111709600-7761aa8216c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="san-f"></a>
-        <a href="#santiago"><img src="https://media.istockphoto.com/id/1095471704/photo/aaerial-view-of-santiago-skyline-at-sunset-with-costanera-skyscraper-and-andes-mountains.jpg?b=1&s=170667a&w=0&k=20&c=L9GMPfA4XDYKnw9Nwj9Az_2HiftRSMpGRHg7-OmbZhw=" alt="" id="san-t"></a>
-        <a href="#venice"><img src="https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" id="v-n"></a>
-        <a href="#cairo"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="c-r"></a>
-        <a href="#seoul"><img src="https://images.unsplash.com/photo-1506816561089-5cc37b3aa9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="" id="s-l"></a>
-        <a href="#melbourne"><img src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" id="m-b"></a>
+        <a href="#franny"><abbr title="37.7749° N, 122.4194° W"><img src="https://images.unsplash.com/photo-1500111709600-7761aa8216c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="san-f"></abbr></a>
+        <a href="#santiago"><abbr title="33.4489° S, 70.6693° W"><img src="https://media.istockphoto.com/id/1095471704/photo/aaerial-view-of-santiago-skyline-at-sunset-with-costanera-skyscraper-and-andes-mountains.jpg?b=1&s=170667a&w=0&k=20&c=L9GMPfA4XDYKnw9Nwj9Az_2HiftRSMpGRHg7-OmbZhw=" alt="" id="san-t"></abbr></a>
+        <a href="#venice"><abbr title="45.4408° N, 12.3155° E"><img src="https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" id="v-n"></abbr></a>
+        <a href="#cairo"><abbr title="30.0444° N, 31.2357° E"><img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="c-r"></abbr></a>
+        <a href="#seoul"><abbr title="37.5519° N, 126.9918° E"><img src="https://images.unsplash.com/photo-1506816561089-5cc37b3aa9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="" id="s-l"></abbr></a>
+        <a href="#melbourne"><abbr title="37.8136° S, 144.9631° E"><img src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" id="m-b"></abbr></a>
     </section>
 
     <section id="franny">
@@ -224,6 +237,18 @@
         <p>San Francisco has a <b>mediterranean</b> type climate with only two seasons, winter, and summer. The summers are hot, mild, and dry. In the winter there is more precipitation . During the year the temperature varies from 7°C to 22°C but overall does not change drastically through the seasons.
         </p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1043225832&amp;format=image" class='graph' alt="">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>San Francisco is hilly with many different types of vegetation. They have coastal scrub with different types of bushes and small plants, oak woodlands dominated by oak trees, saltwater wetlands, and freshwater wetlands. Lastly, most of the city is occupied by grasslands which have different types of annual grasses. San Francisco is also home to lots of wildlife including, coyotes, hawks, deer, banana slugs and many more.
+            </p>
+            <abbr title="Banana Slug"><img src="https://images.squarespace-cdn.com/content/v1/52dfe27be4b065c6bc90b4b5/1593366269973-40OBQ632NN7CKP2NIOAS/Banana_slug_at_UCSC.jpg?format=1000w" alt="A Spotted owl"></abbr>
+            <abbr title="An Oak Tree"><img src="https://images.squarespace-cdn.com/content/v1/5c087e9e4cde7a66033e482d/1562186023743-8C7EYZ0XV1OD8AI666GI/IMG_0816.jpeg" alt=""></abbr>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349852.343108741!2d-122.47013185031531!3d37.67659004416447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1681345766598!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
@@ -240,6 +265,18 @@
         <p>Santiago has a cool semi-arid climate. With <b>mediterranean</b> patterns with warm dry summers and cold humid winters. It doesn't have the four seasons. On the hottest days, temperatures reach up to 35°C.
         </p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=385391039&amp;format=image" alt="" class="graph">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>Santiago varies from shrubland to grasslands. Other important formations are the bamboo. Animals such as guanacos, vicunas, alpacas, armadillos, foxes, opossums, deers and pumas live here. Plants such as White star magnolia and pink magnolia with a weeping willow and below the flame tree in Los Dominicos.
+            </p>
+            <abbr title="Opossum"><img src="https://www.cbc.ca/natureofthings/content/legacy/NCC_Opossums3_1920.jpg" alt=""></abbr>
+            <abbr title="White Star Magnolia"><img src="https://www.gardenia.net/storage/app/public/plant_family/detail/bmHI1t44cou6FTiiOA5xGworCy6axkUmrrNWaC6J.webp" alt=""></abbr>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.96335289988!2d-70.94164758338768!3d-33.47211113201714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Santiago%20Metropolitan%20Region%2C%20Chile!5e0!3m2!1sen!2sca!4v1681354077867!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
@@ -254,6 +291,18 @@
         <p>Next up is Venice, Italy, located on <b>45.4° N, 12.3° E</b>. It is in northern Italy, on the northwestern part of the Adriatic Sea. It is <b>12,084 km</b> away from santiago.</p>
         <p>Venice has a mid-latitude, four season <b>humid subtropical</b> climate. The summers are warm and humid, the winters are very cold, and it is partly cloudy year round. Over the course of the year, the temperature typically varies from 0°C to 23°C and is rarely below -4°C or above 32°C.</p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=127452618&amp;format=image" alt="" class="graph">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>Venice has four species of plant Phanerogams that are mostly found in the Venice lagoon. These plants are called Sea-wrack, Sea-grass, most of those are found in the water covered by over a metre. Additionally, Zostera noltii Hornem grass, and Sea-madder occur near the seabanks. Wild animals such as cormorants, egrets, grebes, herons, hawks, falcons, black-legged stilts, ducks, plovers, and even pink flamingos lives in Venice.
+            </p>
+            <abbr title="Submerged Vegetation"><img src="https://thesciencebreaker.org/storage/breaks/images/aquatic-plants-are-influenced-by-the-surrounding-landscape/aquatic-plants-are-influenced-by-the-surrounding-landscape.png" alt=""></abbr>
+            <abbr title="Pink Flamingos"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Flamingos_Laguna_Colorada.jpg" alt=""></abbr>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358237.8023155488!2d12.202475740532277!3d45.45503967446372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eaa16cb134829%3A0x307098715907f10!2sMetropolitan%20City%20of%20Venice%2C%20Italy!5e0!3m2!1sen!2sca!4v1681354446286!5m2!1sen!2sca" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
@@ -269,7 +318,22 @@
         </p>
         <p>Cairo’s climate is dry, hot, and dominated by desert. During mild winters there is rain falling along the coastal areas, and summers are extremely hot. Prevailing winds change daytime temperatures.
         </p>
+
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=127452618&amp;format=image" alt="" class="graph">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>The natural vegetation of Cairo varies because of the lack of rainfall. Where some water is found, there are perennials and grasses. During spring, the coastal strip is full of plant life. The eastern desert has sparse rainfall, supporting vegetation like tamarisk, acacia, and markeh, as well as thorny shrubs, small succulents, and aromatic herbs. Horses, camels, buffalos and donkeys are examples of wild animals in Cairo.
+            </p>
+            <abbr title="Acacia"><img src="https://cdn.britannica.com/62/156362-050-4E8FE282/Acacia-tree-savanna-Zimbabwe.jpg" alt=""></abbr>
+            <abbr title="Arab Sand Cat"><img src="https://www.sharm-club.com/assets/images/articles/animals/baby-fox.jpg" alt=""></abbr>
+        </div>
+
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33663491335!2d31.217264820551346!3d30.059556316618387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sca!4v1681354599843!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
     </section>
@@ -285,6 +349,18 @@
         <p>Fourth city is Seoul, South Korea. Its coordinates are <b>37.6° N, 126.9° E</b>. It is in northwestern part of the country, close to the border with North Korea, and the Yellow Seashores. This city is <b>8,482 km</b> away from the previous city.</p>
         <p>Seoul’s climate is overall humid but with a very dry winter. It has four seasons, and temperature changes can be extreme, with really hot summers and extremely cold winters. It is a <b>subtropical transitional climate</b>.</p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=1944530039&amp;format=image" alt="" class="graph">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>Seoul had hot and humid summers which do very well for a varied range of vegetation. 4,500 plant species are known there. They have deciduous forests mainly oak, maple trees, and evergreen broad-leaf trees. Seoul is also home to many wildlife including tigers, leopards, lynx, and bears.
+            </p>
+            <abbr title="Evergreen Forest"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Gotjawal_Forest.jpg" alt=""></abbr>
+            <abbr title="Tiger"><img src="https://storage.googleapis.com/cdn.media.bluedot.so/bluedot.koreaexpose/wordpress/2018/02/Amur_tiger_960.jpg" alt=""></abbr>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.91416962314!2d126.80933255913146!3d37.565033714027166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sca!4v1681354695079!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
@@ -299,12 +375,25 @@
         <p>Last city is Melbourne, Australia. Its coordinates are <b>37.8° S, 144.9° E</b>. Its located in southeastern part of mainland Australia, within the state of Victoria. If you travel <b>8,575 km</b> from Seoul, you can get here.</p>
         <p>Melbourne has a mild climate with four distinct seasons. It has hot summers, warm springs, mild autumns, and cool winters, and overall has a variable climate. Throughout the year the temperature varies from 14°C to 25°C and the precipitation stays consistent throughout. Melbourne's climate is <b>subtropical</b>.</p>
         <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQP77-LtQJC5yUm0_cubsc4gVBacjl727_PMuseWFgz0_k45Jy87IvRHMhq1gmrxzZdMaiVHVqTCHQI/pubchart?oid=813052868&amp;format=image" alt="" class="graph">
+        <div class="vegetation">
+            <h1>Vegetation Profile</h1>
+            <div class="seperator">
+                <hr>
+                <i class="fa-solid fa-leaf"></i>
+                <hr>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae fugiat nesciunt doloribus ullam id distinctio, consequuntur provident voluptatum laborum beatae nisi, at culpa commodi? Numquam dolorem repellendus ad, incidunt.
+            </p>
+            <abbr title="Hodu is so cute"><img src="images/20230414_083042.jpg" alt=""></abbr>
+            <abbr title="My dog"><img src="images/20230415_011838.jpg" alt=""></abbr>
+            <img src="images/20230417_224539.jpg" alt="">
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402590.51601501025!2d144.7235034028447!3d-37.97156522175328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sca!4v1681354734349!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </section>
 
     <footer>
         Copyright &copy; Juwon, Izzy and Maria, 2023
     </footer>
-</body>
-
-</html>
+    
+    <div></div>
+</body></html>
