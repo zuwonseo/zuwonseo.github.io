@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            document.write(i)
+        }
+
+        document.write('<br>');
+        //
+        a = ['abc', 'def', 'hij']
+        for (let e in a) {
+            document.write(e)
+        }
+
+        document.write('<br>');
+        for (let e of a) {
+            documetn.write(e, " ")
+        }
+
+        document.write('<br>');
+        //do while
+        let i = 5;
+        do {
+            document.write("do something");
+            document.write('<br>');
+            i--;
+        }
+        while (i > 0);
+
+        // for each
+        a.forEach(function(e) {
+            document.write(e);
+            document.write('<br>');
+        })
+    </script>
+</body>
+
+</html>

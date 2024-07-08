@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b) {
+            return a + b
+        }
+
+        // call function
+        c=add(100,200);
+        console.log(c);
+
+        // javascript doesn't tell you an error
+        c=add(100);
+        
+        console.log(c) // NoN: Not a Number
+        c=add(100,200,300); // additional parameter auto ignored
+        console.log(c);
+        
+        // auto invoke
+        a=(function minus(a,b) {
+            return a-b;
+        })(3,100);
+        console.log(a);
+
+    </script>
+</body>
+</html>
